@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lucas\\Downloads\\Projetos\\C#\\MSGM\\MSGM\\MSGM.csproj": {}
+    "C:\\Users\\Lucas\\Downloads\\Projetos\\C#\\Projeto-MSGM\\MSGM\\MSGM.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lucas\\Downloads\\Projetos\\C#\\MSGM\\MSGM\\MSGM.csproj": {
+    "C:\\Users\\Lucas\\Downloads\\Projetos\\C#\\Projeto-MSGM\\MSGM\\MSGM.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucas\\Downloads\\Projetos\\C#\\MSGM\\MSGM\\MSGM.csproj",
+        "projectUniqueName": "C:\\Users\\Lucas\\Downloads\\Projetos\\C#\\Projeto-MSGM\\MSGM\\MSGM.csproj",
         "projectName": "MSGM",
-        "projectPath": "C:\\Users\\Lucas\\Downloads\\Projetos\\C#\\MSGM\\MSGM\\MSGM.csproj",
+        "projectPath": "C:\\Users\\Lucas\\Downloads\\Projetos\\C#\\Projeto-MSGM\\MSGM\\MSGM.csproj",
         "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucas\\Downloads\\Projetos\\C#\\MSGM\\MSGM\\obj\\",
+        "outputPath": "C:\\Users\\Lucas\\Downloads\\Projetos\\C#\\Projeto-MSGM\\MSGM\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
