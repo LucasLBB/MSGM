@@ -1,0 +1,69 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+#box-signUp {
+    display: block;
+    width: 30vw;
+    height: 65vh;
+    box-shadow: 0 2px 8px rgba(250,0,0,.8);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+}
+
+
+#box-signUp, form, h2, .email, .password, .re-password, .nickName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.email, .password, .re-password, .nickName, .btn-submit {
+    margin-top: 2rem;
+    background: none;
+    color: #fff;
+    outline: none;
+}
+
+.email, .password, .re-password, .nickName {
+    font-size: 1.1rem;
+    width: 350px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.email:focus, .password:focus, .re-password:focus, .nickName:focus {
+    border-bottom-color: rgba(200,0,0,.8);
+    transition: all .5s linear;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+}
+
+:-ms-input-placeholder {
+    color: #fff;
+}
+
+.btn-submit {
+    border: none;
+}
+
+.btn-submit:hover {
+   color: rgba(250,0,0,.8);
+   transition: all .3s linear;
+}
+

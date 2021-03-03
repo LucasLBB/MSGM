@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/css/login.css" />
+
+<div id="box-login">
+    <h2>LOGIN</h2>
+        @using (Html.BeginForm("Index", "Login", FormMethod.Post))
+        {
+            @*@Html.EditorFor(model => model.Email, new { @class = "form-control input-lg required", @name = "email", @id = "email", @placeholder = "Email", @type = "text" });*@
+            <input type="email" class="email" name="email" placeholder="Email" required />
+
+            <input type="password" name="password" class="password" placeholder="Senha" required />
+
+            <input type="submit" class="btn-submit" value="Login"/>
+
+        }
+</div>

@@ -1,0 +1,56 @@
+﻿body, ul, li, p, a {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2rem;
+    list-style: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background: #09080D;
+}
+
+a:link {
+    text-decoration: none;   
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(255,0,0,.5);
+}
+
+.header a img {
+    padding-left: 25px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    color: #f00;
+    color: rgba(250,0,0,.8);
+    transition: all .3s linear;
+}
+
+.header p {
+    position: absolute;
+    left: 0;
+    margin-left: 120px;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
