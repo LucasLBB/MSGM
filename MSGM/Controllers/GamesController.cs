@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MSGM.Controllers
 {
-    public class Login : Controller
+    public class GamesController : Controller
     {
         public IActionResult Index()
         {

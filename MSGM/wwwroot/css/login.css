@@ -64,5 +64,5 @@
 
 .btn-submit:hover {
    color: rgba(250,0,0,.8);
-    transition: all .3s linear;
+   transition: all .3s linear;
 }
