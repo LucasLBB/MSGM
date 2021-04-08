@@ -1,10 +1,13 @@
-﻿* {
+﻿/*General Configuration*/
+* {
     padding: 0;
     margin: 0;
     box-sizing: content-box;
     font-family: 'Roboto', sans-serif;
 }
 
+
+/*Select Configuration*/
 .select {
     margin-top: 50px;
     width: 20vw;

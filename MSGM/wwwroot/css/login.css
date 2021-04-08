@@ -6,12 +6,15 @@
 
 #box-login {
     display: block;
+    max-width: 100%;
     width: 30vw;
+    min-width: 20vw;
     height: 65vh;
-    box-shadow: 0 2px 8px rgba(250,0,0,.8);
+    box-shadow: 0 6px 6px rgba(0,0,0,255);
     margin-left: auto;
     margin-right: auto;
     margin-top: 4rem;
+    background: #000;
 }
 
 
@@ -20,6 +23,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-weight: bold;
 }
 
 .email, .password, .btn-submit {
@@ -30,11 +34,12 @@
     background: none;
     color: #fff;
     outline: none;
+    font-weight: bold;
 }
 
 .email, .password {
     font-size: 1.1rem;
-    width: 350px;
+    width: 25vw;
 }
 
 .email:focus, .password:focus {
