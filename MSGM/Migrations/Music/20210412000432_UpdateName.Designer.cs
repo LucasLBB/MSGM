@@ -8,9 +8,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MSGM.Migrations
 {
-    [DbContext(typeof(MusicContext))]
-    [Migration("20210405012139_InitialCreate")]
-    partial class InitialCreate
+    [DbContext(typeof(Context))]
+    [Migration("20210412000432_UpdateName")]
+    partial class UpdateName
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -30,7 +30,7 @@ namespace MSGM.Migrations
                     b.Property<string>("Available")
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("DtLancamento")
+                    b.Property<string>("DtLaunch")
                         .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("GenreMusic")

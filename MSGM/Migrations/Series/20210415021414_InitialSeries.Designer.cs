@@ -8,9 +8,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace MSGM.Migrations
 {
-    [DbContext(typeof(MusicContext))]
-    [Migration("20210405012740_UpdateCreate")]
-    partial class UpdateCreate
+    [DbContext(typeof(Context))]
+    [Migration("20210415021414_InitialSeries")]
+    partial class InitialSeries
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -30,7 +30,7 @@ namespace MSGM.Migrations
                     b.Property<string>("Available")
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<string>("DtLancamento")
+                    b.Property<string>("DtLaunch")
                         .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("GenreMusic")
@@ -48,6 +48,42 @@ namespace MSGM.Migrations
                     b.HasKey("MusicId");
 
                     b.ToTable("Musics");
+                });
+
+            modelBuilder.Entity("MSGM.Models.Series", b =>
+                {
+                    b.Property<int>("SeriesId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Available")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("DtLaunch")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("GenreSeries")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Producer")
+                        .IsRequired()
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("Seasons")
+                        .IsRequired()
+                        .HasColumnType("varchar(50)");
+
+                    b.HasKey("SeriesId");
+
+                    b.ToTable("Series");
                 });
 #pragma warning restore 612, 618
         }

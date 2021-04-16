@@ -10,25 +10,12 @@ namespace MSGM.Models
     public class Music
     {
 
-        [Key]
         public int MusicId { get; set; }
-
-        [Column(TypeName = "nvarchar(100)")]
         public string Name { get; set; }
-
-        [Column(TypeName = "nvarchar(50)")]
         public string GenreMusic { get; set; }
-
-        [Column(TypeName = "nvarchar(10)")]
-        public string DtLancamento { get; set; }
-
-        [Column(TypeName = "nvarchar(100)")]
+        public string DtLaunch { get; set; }
         public string Singer { get; set; }
-
-        [Column(TypeName = "varchar(150)")]
         public string LinkMusic { get; set; }
-
-        [Column(TypeName = "nvarchar(100)")]
         public string Available { get; set; }
 
     }
